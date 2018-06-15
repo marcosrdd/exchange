@@ -1,6 +1,6 @@
 $(document).ready ->
 
-  $('form').submit ->
+  convert = ->
     if $('form').attr('action') == '/convert'
       $.ajax '/convert',
           type: 'GET'
@@ -13,5 +13,18 @@ $(document).ready ->
           error: (jqXHR, textStatus, errorThrown) ->
             alert textStatus
           success: (data, text, jqXHR) ->
-            $('#result').val(data.value)
+            $('#result').val(data.value.toFixed 2)
         return false;
+  
+  $('#amount').keyup (e) -> convert();
+  $('#amount').click (e) -> convert();
+  
+  $('#reverse').click (e) ->
+    source_currency = $("#source_currency").val()
+    target_currency = $("#target_currency").val()
+    $("#source_currency").val(target_currency)
+    $("#target_currency").val(source_currency)
+    convert()
+    return false;
+
+  return
