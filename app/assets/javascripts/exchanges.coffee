@@ -1,6 +1,10 @@
 $(document).ready ->
 
-  convert = ->
+  convert = -> 
+    if !$("#amount").val() 
+      $('#result').val("")
+      return false;
+
     if $('form').attr('action') == '/convert'
       $.ajax '/convert',
           type: 'GET'
