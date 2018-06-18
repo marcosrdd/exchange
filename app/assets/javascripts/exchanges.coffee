@@ -31,4 +31,10 @@ $(document).ready ->
     convert()
     return false;
 
+  $('#toggle').change (e) -> 
+    if $(@).prop('checked')
+      alert('Sim');
+    else
+      alert('Nao');
+    return  
   return

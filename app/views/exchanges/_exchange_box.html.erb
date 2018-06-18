@@ -5,24 +5,6 @@
       Simule sua conversão
     </div>
 
-    <div class="card-sun-moon">
-      <div>
-        <i class="far fa-sun" aria-hidden="true"></i>
-      </div>
-      <div class="toggle-switch">
-        <!-- Rounded switch -->
-        <label class="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
-        </label>
-      </div>
-
-      <div class="icon">
-        <i class="far fa-moon" aria-hidden="true"></i>
-      </div>
-    </div>
-
-
  
     <div class='card-block'>
       <%= form_tag('/convert', method: :get, id: 'exchange_form') do %>
@@ -50,6 +32,26 @@
             <input type='text' id='result' name='result' class='form-control' placeholder='Resultado' readonly>
           </div>
         </div>
+
+        <div class = "row text-center card-sun-moon">
+          <div class="icon">
+            <div>
+              <i class="far fa-sun" aria-hidden="true"></i>
+            </div>
+          </div>  
+          <div class="toggle-switch">
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input type="checkbox" id="toggle" name="toggle">
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <div class="icon">
+            <i class="far fa-moon" aria-hidden="true"></i>
+          </div>
+
+      </div>
         
       <% end %>
     </div>
