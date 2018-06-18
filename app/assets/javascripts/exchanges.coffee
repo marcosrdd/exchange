@@ -33,8 +33,8 @@ $(document).ready ->
 
   $('#toggle').change (e) -> 
     if $(@).prop('checked')
-      alert('Sim');
+      $('body').addClass('night');
     else
-      alert('Nao');
+      $('body').removeClass('night');
     return  
   return

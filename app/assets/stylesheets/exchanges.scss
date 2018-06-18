@@ -1,5 +1,5 @@
 body {
-    background: image-url("/background-img.jpg") no-repeat center center fixed;
+    background: image-url("/day.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -36,3 +36,8 @@ body {
       padding-bottom: 10px;
     }
   }
+  .night{
+    background: image-url("/night.jpg") no-repeat center center fixed;
+    background-color: #000000
+  }
+  
