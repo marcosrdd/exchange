@@ -38,6 +38,12 @@ body {
   }
   .night{
     background: image-url("/night.jpg") no-repeat center center fixed;
-    background-color: #000000
+    background-color: #000000;
+
+    #result{
+      background-color: #46a552;
+      color: #ffffff
+    }
   }
+ 
   
