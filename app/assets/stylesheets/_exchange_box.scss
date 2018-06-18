@@ -4,25 +4,36 @@
       border: 0;
    
       .card-header{
-        background-color: #878d99;
+        background-color: #46a552;
         border-radius: 0;
         color: white;
         font-weight: 700;
+      }
+      
+      .card-sun-moon{
+        color: #878d99;
+        float: right;
+        padding-right: 20px;
       }
    
       .card-block{
         padding-top: 10px;
         padding: 20px;
+        background-color: #ecfdec;
    
         .title{
-          color: #878d99;
+          color: #46a552;
           font-weight: 700;
         }
    
         .btn-reverse{
-          background-color: #5bc0de;
-          border-color: #5bc0de;
+          background-color: #46a552;
+          border-color: #46a552;
           border-radius: 0;
+        }
+        #result{
+          background-color: #46a552;
+          color: #ffffff;
         }
       }
     }

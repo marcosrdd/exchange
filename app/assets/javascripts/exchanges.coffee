@@ -31,4 +31,10 @@ $(document).ready ->
     convert()
     return false;
 
+  $('#toggle').change (e) -> 
+    if $(@).prop('checked')
+      $('body').addClass('night');
+    else
+      $('body').removeClass('night');
+    return  
   return
